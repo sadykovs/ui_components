@@ -13,14 +13,30 @@ class MyApp extends StatelessWidget {
               centerTitle: true,
             ),
             body: Container(
-              padding: EdgeInsets.all(16),
-              width: 200,
-              height: 200,
-              margin: EdgeInsets.all(30),
-              alignment: Alignment.center,
-              decoration:
-                  BoxDecoration(color: Colors.amber, border: Border.all()),
-              child: Text('Hello Flutter!', style: TextStyle(fontSize: 30)),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Icon(
+                      Icons.adjust,
+                      size: 50,
+                      color: Colors.red,
+                    ),
+                    Icon(
+                      Icons.adjust,
+                      size: 50,
+                      color: Colors.green,
+                    ),
+                    Icon(
+                      Icons.adjust,
+                      size: 50,
+                      color: Colors.amber,
+                    ),
+                    Icon(
+                      Icons.adjust,
+                      size: 50,
+                      color: Colors.indigo,
+                    ),
+                  ]),
             )));
   }
 }
