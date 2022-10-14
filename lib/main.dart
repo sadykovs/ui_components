@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
               centerTitle: true,
             ),
             body: Align(
-              alignment: Alignment.topCenter,
-              child: Text('Hello Flutter!', style: TextStyle(fontSize: 25)),
+              alignment: Alignment.center,
+              child: Text('Hello Flutter!', style: TextStyle(fontSize: 39)),
             )));
   }
 }
