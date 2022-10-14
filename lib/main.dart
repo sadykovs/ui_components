@@ -12,9 +12,15 @@ class MyApp extends StatelessWidget {
               title: Text("Building layout"),
               centerTitle: true,
             ),
-            body: Align(
+            body: Container(
+              padding: EdgeInsets.all(16),
+              width: 200,
+              height: 200,
+              margin: EdgeInsets.all(30),
               alignment: Alignment.center,
-              child: Text('Hello Flutter!', style: TextStyle(fontSize: 39)),
+              decoration:
+                  BoxDecoration(color: Colors.amber, border: Border.all()),
+              child: Text('Hello Flutter!', style: TextStyle(fontSize: 30)),
             )));
   }
 }
