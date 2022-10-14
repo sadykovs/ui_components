@@ -8,10 +8,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        title: Text("Building layout"),
-        centerTitle: true,
-      ),
-    ));
+            appBar: AppBar(
+              title: Text("Building layout"),
+              centerTitle: true,
+            ),
+            body: Align(
+              alignment: Alignment.topCenter,
+              child: Text('Hello Flutter!', style: TextStyle(fontSize: 25)),
+            )));
   }
 }
